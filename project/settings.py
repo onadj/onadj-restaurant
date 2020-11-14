@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'reservation',
     'blog',
     'taggit',
+    'aboutus',
 ]
 
 MIDDLEWARE = [
