@@ -34,4 +34,4 @@ def send_email(request):
 
 
 def send_success(request):
-    return HttpResponse('thanks you for you email ^_^')
+    return HttpResponse('Thanks you for you email')
