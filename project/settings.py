@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'home',
     'bootstrap4',
     'django_summernote',
+    'members',
 ]
 
 MIDDLEWARE = [
@@ -141,3 +142,7 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_PORT = 1025
+
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
