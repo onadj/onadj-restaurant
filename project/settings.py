@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'aboutus',
     'contact',
     'home',
+    'bootstrap4',
+    'django_summernote',
 ]
 
 MIDDLEWARE = [

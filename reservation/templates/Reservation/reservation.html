@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load bootstrap4 %}
 {% load static %}
 {% block body %}
   
@@ -94,10 +94,10 @@
 
                 <form action="" method="POST">
                   {% csrf_token %}
-                  {{ form }}
-                
-                  
-                      <button type="submit" class="btn btn-primary">Reserve A Table</button>
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Reserve A Table</button>
+    {% endbuttons %}
                  
                 </form>
 

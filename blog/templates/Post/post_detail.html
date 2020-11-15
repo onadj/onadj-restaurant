@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bootstrap4 %}
 {% block body %}
     
 
@@ -68,9 +69,10 @@
                     <h3 class="mb-5">Leave a comment</h3>
                     <form method="POST" class="p-5 bg-light">
                         {% csrf_token %}
-                        {{ comment_form }}
-                        
-                            <button type="submit" class="btn btn-primary">Leave A Comment</button>
+                         {% bootstrap_form comment_form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Leave A Comment</button>
+    {% endbuttons %}
                         
                     </form>
                   </div>
