@@ -26,7 +26,7 @@ SECRET_KEY = '_r7md@lr-jck)pgs1w#giea21w!s3nqu$melzasbpn&ur%iqzy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['onagy-restaurant.herokuapp.com']
+ALLOWED_HOSTS = ['onagy-restaurant.herokuapp.com', 'localhost']
 
 
 # Application definition
