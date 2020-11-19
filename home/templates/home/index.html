@@ -88,7 +88,7 @@
             {% for meal in meals %}
               
             <div class="d-flex item">
-              <div class="image" style="background-image: url({{image.url}});" data-aos="fade"></div> 
+              <div class="image" style="background-image: url({{meal.image.url}});" data-aos="fade"></div> 
               <div class="text">
                 <h3>{{meal.name}}</h3>
                 <p>{{meal.description|truncatewords:15}}</p>
