@@ -9,7 +9,7 @@ class Meals(models.Model):
     people = models.IntegerField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
     preparation_time = models.IntegerField()
-    image = models.ImageField(upload_to='media/')
+    image = models.ImageField(upload_to='meals/')
     slug = models.SlugField(blank=True, null=True)
 
     def save(self, *args, **kwargs):
