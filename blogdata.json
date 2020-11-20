@@ -1,0 +1,1 @@
+[{"model": "blog.category", "pk": 1, "fields": {"category_name": "Cooking"}}, {"model": "blog.category", "pk": 2, "fields": {"category_name": "Food"}}]
