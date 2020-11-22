@@ -81,5 +81,3 @@ def post_by_category(request, category):
     }
 
     return render(request, 'Post/post_list.html', context)
-
-
