@@ -14,7 +14,7 @@ def send_email(request):
             message = form.cleaned_data['message']
 
             try : 
-                send_mail(subject, message, from_email,['djangorestaurant31@gmail.com'])
+                send_mail(from_email, message, subject, ['djangorestaurant31@gmail.com'])
 
             except BadHeaderError:
                 return HttpResponse('invalid header') 
