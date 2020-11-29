@@ -94,8 +94,9 @@
                 <p>{{meal.description|truncatewords:15}}</p>
                 <p class="price">${{meal.price}}</p>
               </div>
+              
             </div> <!-- .item -->
-
+ 
             {% endfor %}
 
           </div>
@@ -131,10 +132,12 @@
                               <div class="d-block d-md-flex menu-food-item">
                                 <div class="text order-1 mb-3">
                                   <h3><a href="{% url 'meals:meal_detail' meal.slug %}">{{meal.name}}</a></h3>
-                                  <p>{{meal.description|truncatewords:20}}</p>
+                                
                                 </div>
                                 <div class="price order-2">
                                   <strong>${{meal.price}}</strong>
+                                  <br>
+                                      <p><a href="{% url 'meals:meal_detail' meal.slug %}" class="btn btn-primary btn-outline-primary btn-sm text-center">Read More</a></p>
                                 </div>
                               </div> <!-- .menu-food-item -->
                             {% endif %}
