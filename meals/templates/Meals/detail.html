@@ -104,7 +104,13 @@
                     <p>For : {{meal_detail.people}} People</p>
                     <p>Preparation Time : {{meal_detail.preparation_time}} Minutes</p>
                     <p>Price : {{meal_detail.price}}$ </p>
-                       <p><a href="/" class="btn btn-primary btn-outline-primary btn-sm text-center">Back</a></p>
+                       <p><a href="{% url 'meals:meal_list' %}" class="btn btn-primary btn-outline-primary btn-sm text-center">Go To Our Menu</a></p>
+<br>
+                        <p><a href="{% url 'reservation:reserve_table' %}" class="btn btn-primary btn-outline-primary btn-sm text-center">Reserve a Table</a></p>
+<br>
+                         <p><a href="{% url 'contact:send_email' %}" class="btn btn-primary btn-outline-primary btn-sm text-center"> Contact Us</a></p>
+
+
 
               </div>
             </div>
